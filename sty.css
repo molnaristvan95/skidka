@@ -1,0 +1,111 @@
+*:root{
+  font-size:16px;
+}
+*{
+  margin:0;
+  box-sizing:border-box;
+  transition:.2s linear all;
+}
+html{
+  user-select:none !important;
+  -webkit-user-select:none !important;
+}
+body#main{
+  background:linear-gradient(to bottom, black 70%, #090 100%) no-repeat;
+  color:#0f0;
+  padding:10px;
+  padding-bottom:30px;
+  height:auto;
+  user-select:none !important;
+  -webkit-user-select:none !important;
+}
+a{
+  pointer-events:none;
+  opacity:0;
+}
+body#main a{
+  pointer-events:auto;
+  opacity:1;
+}
+*:focus{
+  outline:none;
+  box-shadow:1px 1px 10px 0 yellow;
+}
+
+h2{
+  text-align:center;
+  animation:pulse 5s infinite cubic-bezier(0,0,.01,1);
+  margin:2vh auto;
+}
+@keyframes pulse{
+  50%{color:#0ff;}
+}
+figure{
+  width:100%;
+  text-align:center;
+  margin:4vh auto;
+}
+figure:hover  img{
+  opacity:1;
+}
+img{
+  width:50%;
+  border-radius:10px;
+  opacity:.8;
+  box-shadow:1px 1px 10px yellow;
+}
+figcaption{
+  
+}
+form{
+  text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100vw;
+  height:30px;
+  background:#0f0;
+  color:black;
+}
+form>button{
+  opacity:.5;
+}
+#show{
+  position:fixed;
+  left:calc(50% - 7.5vw);
+  top:calc(50% - 7.5vh);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:15w;
+  height:15vh;
+  zoom:1.5;
+  display:none;
+  opacity:.3.;
+}
+
+@media (min-width:700px) {
+  /*body *{
+    display:none;
+  }
+  body#main::before{
+    content:'ERROR - SCREEN IS TOO WIDE.. PLEASE OPEN ON CELLPHONE';
+  }*/
+  figure{
+    floa:left;
+    widt:47%;
+    min-heigh:50vh;
+    displa:inline-block;
+  }
+  img{
+    width:25%;
+  }
+  img:hover{
+    width:30%;
+  }
+}
+
+
